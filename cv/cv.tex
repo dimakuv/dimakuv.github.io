@@ -79,10 +79,11 @@
 %\vspace{0.25in}
 
 \begin{minipage}{0.45\linewidth}
-Noethnitzer strasse 25\\
+\vspace{0.1in}
+7079 NE Ronler Way\\
 %Technical University of Dresden,\\
-01187 Dresden\\
-Germany\\
+97124 Hillsboro\\
+OR, USA\\
 \\
 %  \href{http://www.mpi-sws.org}{Max Planck Institute for Software Systems} \\
 
@@ -90,7 +91,7 @@ Germany\\
 \end{minipage}
 \begin{minipage}{0.45\linewidth}
   \begin{tabular}{ll}
-      Mobile: & +49 (176) 9978 5337\\
+      Mobile: & +1 (503) 724 6684\\
       Email: & \href{mailto:dmitrii.kuvaiskii@gmail.com}{\tt dmitrii.kuvaiskii@gmail.com} \\
     Homepage: & \href{https://dimakuv.github.io/}{\tt https://dimakuv.github.io/} \\
     GitHub: & \href{https://github.com/dimakuv}{\tt https://github.com/dimakuv} \\
@@ -101,7 +102,7 @@ Germany\\
 
 \section*{Research Interests}
 
-My research interests lie in the field of dependability in software systems, with a particular focus on fault tolerance and security. Within these fields, I investigate the applicability of modern hardware extensions to increase reliability of real-world applications while imposing low overheads.
+My research interests lie in the field of dependability in software systems, with a particular focus on fault tolerance and security. Within these fields, I investigate the applicability of modern hardware extensions to increase reliability of real-world applications while imposing low overheads. My current research at Intel Labs concentrates on Intel SGX and future security extensions.
 
 %My research interests revolve around dependability in software systems, with the focus on software-based fault tolerance and security for legacy C/C++ programs.
 %In particular, I leverage recent sets of extensions in Intel processors (AVX, TSX, MPX, SGX) to decrease the performance penalty induced by current techniques.
@@ -117,12 +118,12 @@ My research interests lie in the field of dependability in software systems, wit
 
 \begin{itemize}
 
- \item \textbf{Ph.D. Candidate} in Computer Science (Dec 2013 - present)\\
+ \item \textbf{Ph.D.} in Computer Science, Summa Cum laude (Dec 2013 - Jan 2018)\\
  {\em  TU Dresden, Germany}\\
 %{\em Thesis: Incremental Parallel and Distributed Systems}\\
 Advisors: Prof. Dr. Christof Fetzer and Prof. Dr. Pramod Bhatotia
 
- \item \textbf{Master of Science} in Computer Science (Oct 2011 - Nov 2013) \\
+ \item \textbf{M.Sc.} in Computer Science (Oct 2011 - Nov 2013) \\
  {\em  TU Dresden, Germany}
 %Advisors: Dr. Diogo Behrens
 
@@ -135,12 +136,20 @@ Advisors: Prof. Dr. Christof Fetzer and Prof. Dr. Pramod Bhatotia
 
 \section*{Employment}
 
+{\bf Intel Labs, Hillsboro, OR, USA, May 2018 - present}\\
+{\em Datacenter Security Research Scientist}
+\begin{itemize}
+    \vspace{-2mm}
+	\item Responsibilities: hardware/software co-design of security solutions.
+\end{itemize}
+
+\vspace{2mm}
+
 {\bf Intel Labs, Hillsboro, OR, USA, July 2017 - Sep 2017}\\
 {\em Datacenter Security Intern}
 \begin{itemize}
-	\item Responsibilities: developing applications with Intel SGX (C/C++).
     \vspace{-2mm}
-	\item Supervisor: Mona Vij.
+	\item Responsibilities: developing applications with Intel SGX (C/C++).
 \end{itemize}
 
 \vspace{2mm}
@@ -148,6 +157,7 @@ Advisors: Prof. Dr. Christof Fetzer and Prof. Dr. Pramod Bhatotia
 {\bf Auriga Inc, Moscow, Russia, Sep 2010 - Aug 2011}\\
 {\em Certification engineer, Software developer}
 \begin{itemize}
+    \vspace{-2mm}
 	\item Responsibilities:
 		\begin{itemize}
 		\item -- documenting and testing code of the PikeOS embedded operating system (C);
@@ -156,11 +166,12 @@ Advisors: Prof. Dr. Christof Fetzer and Prof. Dr. Pramod Bhatotia
 	\item 
 \end{itemize}
 
-\vspace{-2mm}
+\vspace{2mm}
 
 {\bf Diasoft, Moscow, Russia, Sep 2007 - Aug 2010}\\
 {\em Software developer}
 \begin{itemize}
+    \vspace{-2mm}
 	\item Responsibilities: programming insurance subsystems using Transact SQL and Delphi.
 \end{itemize}
 
@@ -179,15 +190,15 @@ Advisors: Prof. Dr. Christof Fetzer and Prof. Dr. Pramod Bhatotia
 \section* {Ph.D. Dissertation}
 
 \begin{itemize}
-\item {\bf Topic:} Dependable Systems Leveraging new ISA extensions (preliminary)\\
+\item {\bf Topic:} Hardware-Assisted Dependable Systems\\
 %\vspace{3pt}
 {\bf Supervisors:} Prof. Dr. Christof Fetzer and Prof. Dr. Pramod Bhatotia\vspace{-13pt}\\
 
-In the context of my Ph.D. dissertation, I investigate and build systems to increase software dependability leveraging recent sets of extensions in Intel processors, with the focus on software-based fault tolerance and security for legacy C/C++ programs. %In particular, I leverage recent sets of extensions in Intel processors (AVX, TSX, MPX, SGX) to decrease the performance penalty induced by current dependability techniques.\\
+In the context of my Ph.D. dissertation, I investigated and built systems to increase software dependability leveraging recent sets of extensions in Intel processors, with the focus on software-based fault tolerance and security for legacy C/C++ programs. %In particular, I leverage recent sets of extensions in Intel processors (AVX, TSX, MPX, SGX) to decrease the performance penalty induced by current dependability techniques.\\
 
 {\bf Research projects:}
 	\begin{itemize}%
-		\item Detailed evaluation of Intel MPX and discussion of its applicability in comparison to other bounds-checking approaches {\bf [ACM ASPLOS'17]*};
+		\item Detailed evaluation of Intel MPX and discussion of its applicability in comparison to other bounds-checking approaches {\bf [ACM SIGMETRICS'18]};
 		\item \emph{SGXBounds}: LLVM-based bounds checker to detect and tolerate security bugs in multithreaded legacy C/C++ programs inside Intel SGX enclaves {\bf [EuroSys'17]};
 		\item \emph{Elzar}: LLVM compiler pass to detect and mask transient CPU faults in multithreaded legacy C/C++ programs using Intel AVX \href{http://se.inf.tu-dresden.de/pubs/papers/Kuvaiskii2016elzar.pdf}{{\bf [DSN'16]}} \href{https://github.com/tudinfse/elzar}{{\bf [code]}};
 		\item \emph{HAFT}: LLVM compiler pass to detect and tolerate transient CPU faults in multithreaded legacy C/C++ programs using Intel TSX \href{http://se.inf.tu-dresden.de/pubs/papers/Kuvaiskii2016HAFT.pdf}{{\bf [EuroSys'16]}} \href{https://github.com/tudinfse/haft}{{\bf [code]}};
@@ -203,30 +214,31 @@ In the context of my Ph.D. dissertation, I investigate and build systems to incr
 
 \item Intel MPX Explained\\
 {\em Oleksii Oleksenko, {Dmitrii Kuvaiskii}, Pramod Bhatotia,  Pascal Felber, and Christof Fetzer}\\
-{\bf ACM ASPLOS 2017}. (Under submission)
+{\bf ACM SIGMETRICS 2018}.
+
+\item Fex: A software systems evaluator\\
+{\em Oleksii Oleksenko, {Dmitrii Kuvaiskii}, Pramod Bhatotia, and Christof Fetzer}\\
+{\bf  DSN 2017}.
 
 \item SGXBounds: Memory Safety for Shielded Execution\\
 {\em Dmitrii Kuvaiskii, Oleksii Oleksenko, Sergei Arnautov, Bohdan Trach, Pramod Bhatotia, Pascal Felber, and Christof Fetzer}\\
-{\bf  EuroSys 2017}. Best paper award.\\
-Software artifact: \href{https://github.com/tudinfse/sgxbounds}{https://github.com/tudinfse/sgxbounds}
+{\bf  EuroSys 2017}. Best paper award.
 
 \item Elzar: Triple Modular Redundancy using Intel Advanced Vector Extensions\\
 {\em Dmitrii Kuvaiskii, Oleksii Oleksenko, Pramod Bhatotia, Pascal Felber, and  Christof Fetzer}\\
-{\bf  DSN 2016}.\\
-Software artifact: \href{https://github.com/tudinfse/elzar}{https://github.com/tudinfse/elzar}
+{\bf  DSN 2016}.
 
 \item HAFT: Hardware-Assisted Fault Tolerance\\
 {\em Dmitrii Kuvaiskii, Rasha Faqeh, Pramod Bhatotia, Pascal Felber, and  Christof Fetzer}\\
-{\bf  EuroSys 2016}.\\
-Software artifact: \href{https://github.com/tudinfse/haft}{https://github.com/tudinfse/haft}
+{\bf  EuroSys 2016}.
 
 \item $\Delta$-Encoding: Practical Encoded Processing\\
 {\em Dmitrii Kuvaiskii and Christof Fetzer}\\
 {\bf   DSN 2015}. Carter Award (best student paper).
 
-%\item Needles in the Haystack---Tackling Bit Flips in Lightweight Compressed Data\\
-%{\em Till Kolditz, Dirk Habich, {Dmitrii Kuvaiskii}, Wolfgang Lehner, and Christof Fetzer}\\
-%{\bf DATA 2015}.
+\item Needles in the Haystack---Tackling Bit Flips in Lightweight Compressed Data\\
+{\em Till Kolditz, Dirk Habich, {Dmitrii Kuvaiskii}, Wolfgang Lehner, and Christof Fetzer}\\
+{\bf DATA 2015}.
 
 \item HardPaxos: Replication hardened against hardware errors\\
 {\em Diogo Behrens, {Dmitrii Kuvaiskii}, and Christof Fetzer}\\
@@ -236,19 +248,32 @@ Software artifact: \href{https://github.com/tudinfse/haft}{https://github.com/tu
 
 %\clearpage
 
-%{\bf Extended Abstracts:}
+{\bf Other Publications:}
 
-%\begin{itemize}
+\begin{itemize}
 
-%\item{Efficient Fault Tolerance using Intel MPX and TSX}\\
-%{\em Oleksii Oleksenko, {Dmitrii Kuvaiskii}, Pramod Bhatotia, Christof Fetzer, and Pascal Felber}\\
-%Fast abstract at {\bf DSN 2016}.
+\item{Snort Intrusion Detection System with Intel Software Guard Extension (Intel SGX)}\\
+{\em Dmitrii Kuvaiskii, Somnath Chakrabarti, and Mona Vij}\\
+{\bf ArXiv.org 2018}.
 
-%\item{Practical Encoded Processing}\\
-%{\em {Dmitrii Kuvaiskii} and Christof Fetzer}\\
-%Poster at {\bf SRDS 2014}.
+\end{itemize}
 
-%\end{itemize}
+\section*{Open Source Projects}
+\begin{itemize}
+\item Intel MPX Explained\\
+{\em \href{https://intel-mpx.github.io}{https://intel-mpx.github.io}}
+\item SGXBounds\\
+{\em \href{https://github.com/tudinfse/sgxbounds}{https://github.com/tudinfse/sgxbounds}}
+\item Elzar\\
+{\em \href{https://github.com/tudinfse/elzar}{https://github.com/tudinfse/elzar}}
+\item HAFT\\
+{\em \href{https://github.com/tudinfse/haft}{https://github.com/tudinfse/haft}}
+\item SEC-IDS aka Snort-SGX\\
+{\em \href{https://github.com/cloud-security-research/sgx-ids}{https://github.com/cloud-security-research/sgx-ids}}
+\item Graphene-SGX (contributor)\\
+{\em \href{https://github.com/oscarlab/graphene}{https://github.com/oscarlab/graphene}}
+\end{itemize}
+
 
 
 \section*{Talks}
@@ -267,11 +292,11 @@ Software artifact: \href{https://github.com/tudinfse/haft}{https://github.com/tu
 \section*{Teaching experience}
 
 \begin{itemize}
-\item {\bf Teaching assistant:} Distributed Systems Engineering courses, TU Dresden, Dec 2013 - present.
+\item {\bf Teaching assistant:} Distributed Systems Engineering courses, TU Dresden, Dec 2013 - Jan 2018.
 \begin{itemize}
 	\item --- Concurrent and Distributed Systems lab, Summer Semesters 2014 - 2016 
-	\item --- Principles of Dependable Systems exercises, Winter Semesters 2014 - 2016
-	\item --- Software Fault Tolerance exercises, Summer Semesters 2014 - 2016
+	\item --- Principles of Dependable Systems exercises, Winter Semesters 2014 - 2018
+	\item --- Software Fault Tolerance exercises, Summer Semesters 2014 - 2018
 \end{itemize}
 \end{itemize}
 
@@ -324,6 +349,11 @@ Email: \href{mailto:pramod.bhatotia@ed.ac.uk}{\tt pramod.bhatotia@ed.ac.uk}
 %Professor (Complex Systems Group)\\
 University of Neuchatel\\
 Email: \href{mailto:pascal.felber@unine.ch}{\tt pascal.felber@unine.ch}
+
+\item {\bf Mona Vij }  \\
+%Professor (Systems Engineering Group)\\
+Intel Labs, USA\\
+Email: \href{mailto:mona.vij@intel.com}{\tt mona.vij@intel.com}
 
 \end{itemize}
 
